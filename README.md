@@ -6,6 +6,7 @@ This skeletal contains the following libraries bundled together
 
 - Bootstrap (Sass) based
 - Typescript
+- RxJS
 - Jquery
 - Webpack
 
@@ -72,7 +73,6 @@ $ php -S localhost:5000 -t public
 - add live-reload
 - better code-splitting (https://webpack.js.org/guides/code-splitting/)
 - add JSX
-- add RxJS in webpack
 
 ### Contributions
 - PRs are always welcome, please fork it and send PRs.

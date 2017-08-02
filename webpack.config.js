@@ -69,5 +69,5 @@ module.exports = {
     performance: {
         hints: "error"
     },
-    watch: false
+    watch: true
 };
