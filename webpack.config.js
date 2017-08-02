@@ -3,7 +3,7 @@ var webpack = require("webpack");
 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-const extractSASS = new ExtractTextPlugin('css/[name].css');
+const extractSASS = new ExtractTextPlugin('css/bundle.css');
 
 const jQueryProvidePlugin  = new webpack.ProvidePlugin({
     jQuery:'jquery',
@@ -20,7 +20,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'public/build'),
         filename: 'scripts/bundle.js',
-        publicPath: "/assets/"
+        publicPath: "/public/"
     },
     plugins:[
         jQueryProvidePlugin,
@@ -33,7 +33,16 @@ module.exports = {
                 include: path.resolve(__dirname, "./assets/typescripts"),
                 loader: 'ts-loader'
             },
-            { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: "file-loader?name=[name].[ext]&outputPath=css/fonts/&publicPath=/build/"
+            },
             {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
@@ -43,7 +52,7 @@ module.exports = {
                 })
             },
             {
-                test: /\.scss$/i,
+                test: /\.(sass|scss)$/i,
                 use: extractSASS.extract(['css-loader', 'sass-loader'])
             }
         ]
