@@ -1,8 +1,5 @@
 import * as $ from "jquery";
 import "bootstrap";
-import "bootstrap-sass";
-
-// import '../../assets/sass/main.scss';
 
 import { sayHello } from "./greet";
 

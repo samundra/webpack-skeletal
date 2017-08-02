@@ -2,15 +2,28 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/main.css">
+    <link href="build/css/main.css" rel="stylesheet" type="text/css"/>
     <title>Hello World!</title>
 </head>
 <body>
 <div class="container">
-    <p id="greeting">Loading ...</p>
     <div class="col-md-12">
-        <p>Hello World</p>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+
+            <div class="alert alert-success">
+                <p class="text-info"><em>Success!</em> This is a bootstrap alert-success.</p>
+            </div>
+        </div>
     </div>
+    <p id="greeting">Loading ...</p>
 
     <!-- Modal -->
     <!-- Button trigger modal -->
@@ -38,6 +51,6 @@
         </div>
     </div>
 </div>
-<script src="js/build/app.js?t=2"></script>
+<script src="build/scripts/bundle.js"></script>
 </body>
 </html>

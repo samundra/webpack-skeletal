@@ -1,2 +1,1 @@
-public/js/build/**/*
-!public/js/build/
+public/build
