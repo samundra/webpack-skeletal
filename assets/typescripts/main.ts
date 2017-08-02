@@ -9,3 +9,7 @@ function showHello(divName: string, name: string) {
 }
 
 showHello("greeting", "TypeScript");
+
+$(document).ready(function() {
+   console.log("I am from jQuery na.");
+});
