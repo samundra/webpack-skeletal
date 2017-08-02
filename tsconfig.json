@@ -9,7 +9,7 @@
   "compilerOptions": {
     "lib" : ["es2015", "es2015.iterable", "es2017", "dom"],
 //    "target": "es6",
-//    "module": "commonjs",
+    "module": "commonjs",
     "sourceMap": true
 //    "emitDecoratorMetadata": true,
 //    "experimentalDecorators": true,

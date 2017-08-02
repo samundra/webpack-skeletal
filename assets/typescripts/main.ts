@@ -1,5 +1,8 @@
 import * as $ from "jquery";
 import "bootstrap";
+import "bootstrap-sass";
+
+// import '../../assets/sass/main.scss';
 
 import { sayHello } from "./greet";
 
@@ -9,9 +12,3 @@ function showHello(divName: string, name: string) {
 }
 
 showHello("greeting", "TypeScript");
-
-$(document).ready(function() {
-    // let $variable : JQuery = $("#myCustomModal");
-    //
-    // console.log($variable);
-});
