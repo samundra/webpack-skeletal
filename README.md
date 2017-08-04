@@ -51,22 +51,28 @@ $ cd webpack-skeletal
 $ npm install
 
 // Webpack will execute and generate css, js in `public/build` folder in respective folders
-$ node_modules/.bin/webpack
+$ npm run webpack
 ```
- 
+
 ### Development
 Host the application in webserver, point document root to `public` and see browse it.
-You should be to see your changes. I generally use ```php```s in-built web-server.
+You should be to see your changes.
 
-Below command will run PHP's builtin web-server accessible at ```http://localhost:5000```
-```bash
-$ php -S localhost:5000 -t public
-```
+We can use google chrome extension called "Webserver for Chrome" from
+https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb
+It will create a javascript based web-server. Once installed, match the settings
+similar to below:
+
+![web_server_for_chrome](https://user-images.githubusercontent.com/760855/28959442-a13ead6e-7924-11e7-9d57-6c1b9ea42bb0.png)
+
+1. Choose public folder (document root)
+2. Set it to automatically open index.html
+3. Visit link to browse it.
 
 ### Cleanup Build folder
  ```bash
  $ cd webpack-skeletal
- $ ./cleanup.sh
+ $ npm run cleanup
  ```
 
 ### TODO
