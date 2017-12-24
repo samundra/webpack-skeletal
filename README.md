@@ -55,8 +55,8 @@ $ npm run webpack
 ```
 
 ### Development
-Host the application in webserver, point document root to `public` and see browse it.
-You should be to see your changes.
+Host the application in webserver, point document root to `public` then browse it.
+You should be able to see your changes.
 
 We can use google chrome extension called "Webserver for Chrome" from
 https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb
